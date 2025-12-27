@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Mulish:wght@500&display=swap');
+
+@import "tailwindcss";
+
+/* =========================
+   ROOT VARIABLES
+   ========================= */
+:root {
+  --primary-bg: #081221;
+  --primary-bg-end: #03080f;
+  --primary-card: #0e1a2b;
+  --primary-input: #182c47;
+  --primary-blue: #5692e8;
+
+  --text-primary: #ffffff;
+  --text-secondary: #c1d1e8;
+
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-mulish: 'Mulish', sans-serif;
+}
+
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: var(--font-mulish);
+  color: var(--text-secondary);
+
+  background: linear-gradient(
+    180deg,
+    var(--primary-bg),
+    var(--primary-bg-end)
+  );
+}
+
+/* Headings & UI elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label {
+  font-family: var(--font-montserrat);
+  color: var(--text-primary);
+}
+
+/* =========================
+   SCROLLBAR
+   ========================= */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-card);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a7ec9;
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
