@@ -78,7 +78,7 @@ A modern, responsive **Single Page Application (SPA)** built with **React 19**, 
 1. **Clone or extract the project**
 
    ```bash
-   cd videogames-assignmen
+   cd videogames-assignment
    ```
 
 2. **Install dependencies**
@@ -133,7 +133,7 @@ videogames-assignmen/
 * **Endpoint**
 
   ```
-  https://admin.edulatte.in/api/games
+  {{BASE_URL}}/api/games
   ```
 
 * **Handled States**
